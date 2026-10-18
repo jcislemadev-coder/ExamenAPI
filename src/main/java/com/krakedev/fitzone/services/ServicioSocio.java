@@ -26,4 +26,11 @@ public class ServicioSocio {
 	public List<Socio> buscarPorEstado(boolean activo) {
 	    return socioRepository.findByActivo(activo);
 	}
+	
+	public List<Socio> listar() {
+	    return socioRepository.findAll();
+	}
+	
+	
+	
 }
